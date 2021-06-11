@@ -12,3 +12,5 @@ You only need:
 - npm start
 
 and that's it! You can see the presentation in localhost:8000
+
+Powered by https://github.com/jxnblk/mdx-deck
