@@ -1,0 +1,141 @@
+import { themes } from 'mdx-deck'
+export const theme = themes.big
+
+<Header>
+
+¿Git qué? Lo básico.
+
+</Header>
+
+import Greeting from './slides/greeting';
+
+<Greeting />
+
+---
+import ControlVersion from './slides/controlVersion.js';
+
+<ControlVersion />
+
+---
+# ¿Para qué sirve?
+- Trabajo en equipo 🤝
+- Facilita el trabajo asíncrono ⏰
+- Historial de todos los cambios 🎞
+- Poderes 🔮
+
+<img src='https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif' alt='magic' width="40" height="40" style={{maxWidth: '400px'}} />
+
+---
+# ¿Quién hizo git?
+
+🤔 Originalmente pensado y concebido por [Scott Chacon](https://github.com/schacon). 
+
+🎨 Casi todo el diseño es de [Jason Long](https://github.com/jasonlong). 
+
+🙌 Es mantenido colaborativamente en [git-scm.com](git-scm.com) en el repositorio de Github.
+
+👀 Todos podemos contribuir.
+
+---
+# Escenario...
+
+2 personas trabajando en el mismo proyecto 
+
+A: 🤓 💻  
+B: 🤪💻
+
+---
+## Sin git: 
+
+ 🤓 😳 😠 😡 😭 😊 💻 💾
+            --> 💾 💻 🤪 😳 😠 😡 😭 😊
+
+---
+## Con git: 
+
+ 😳 💻  😠 💻  😡  💻 😭 💻  😊 💻  ✅
+
+ 😳 💻  😠 💻  😡  💻 😭 💻  😊 💻  ✅
+
+---
+ # Su misión:
+
+## 🤓 Switch + 🤪 Header = 
+
+<img src='https://media.giphy.com/media/xTiIzoVQB8P6PSioda/giphy.gif' alt='fabulous' width="40" height="40" style={{maxWidth: '500px'}}/>
+
+---
+import Terminal from './Terminal.js'
+
+## Primeros pasos:
+
+## Tenemos un proyecto en conjunto? 
+## Tenemos un repositorio creado? [Más información de como crear un repositorio](https://docs.github.com/es/github/getting-started-with-github/quickstart/create-a-repo)
+
+---
+<Steps>
+
+- <Terminal text='git init' height='50px' color='white' />
+- <Terminal text='git checkout develop' height='50px' color='white' />
+- <Terminal text='git pull' height='50px' color='red' />
+- <Terminal text='git checkout -b feature/switch' height='50px' color='white' />
+
+</Steps>
+
+---
+
+import Switch from './Switch.js'
+import Terminal from './Terminal.js'
+
+<Switch />
+
+<Steps>
+
+- <Terminal text='git status' height='50px' color='white' />
+- <Terminal text='Switch.js modified: Home.js' height='50px' color='red' />
+- <Terminal text='git add .' height='50px' color='white' />
+- <Terminal text='git status' height='50px' color='white' />
+- <Terminal text='Switch.js modified: Home.js' height='50px' color='yellowgreen' />
+- <Terminal text='git commit -m "Agregando estructura de Switch, faltan estilos"' height='50px' color='white' />
+
+</Steps>
+
+---
+import SwitchWithColors from './SwitchWithColors.js'
+
+<SwitchWithColors />
+
+<Steps>
+
+- <Terminal text='git status' height='30px' color='white' />
+- <Terminal text=' modified: Switch.js' height='30px' color='red' />
+- <Terminal text='git add .' height='30px' color='white' />
+- <Terminal text='git commit -m "Estilos listos"' height='150px' color='white'/>
+
+</Steps>
+
+---
+
+🤓 💻 Switch 
+
+... WIP 
+
+... ✅
+
+---
+
+- <Terminal text='git commit -m "Estilos listos"' height='150px' color='white'/>
+
+---
+
+# Handy commands
+
+- git add .
+- git commit -m ""
+- git status
+- git log
+- git diff
+- git push
+
+
+
