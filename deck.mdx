@@ -3,7 +3,7 @@ export const theme = themes.big
 
 <Header>
 
-¿Git qué? Lo básico.
+¿Git qué? Lo basico.
 
 </Header>
 
@@ -12,20 +12,24 @@ import Greeting from './slides/greeting';
 <Greeting />
 
 ---
+
 import ControlVersion from './slides/controlVersion.js';
 
 <ControlVersion />
 
 ---
+
 # ¿Para qué sirve?
-- Trabajo en equipo 🤝
-- Facilita el trabajo asíncrono ⏰
-- Historial de todos los cambios 🎞
-- Poderes 🔮
+
+ - Trabajo en equipo 🤝
+ - Facilita el trabajo asíncrono ⏰
+ - Historial de todos los cambios 🎞
+ - Poderes 🔮
 
 <img src='https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif' alt='magic' width="40" height="40" style={{maxWidth: '400px'}} />
 
 ---
+
 # ¿Quién hizo git?
 
 🤔 Originalmente pensado y concebido por [Scott Chacon](https://github.com/schacon). 
@@ -37,6 +41,7 @@ import ControlVersion from './slides/controlVersion.js';
 👀 Todos podemos contribuir.
 
 ---
+
 # Escenario...
 
 2 personas trabajando en el mismo proyecto 
@@ -45,12 +50,14 @@ A: 🤓 💻
 B: 🤪💻
 
 ---
+
 ## Sin git: 
 
  🤓 😳 😠 😡 😭 😊 💻 💾
-            --> 💾 💻 🤪 😳 😠 😡 😭 😊
+           💾 💻 🤪 😳 😠 😡 😭 😊
 
 ---
+
 ## Con git: 
 
  😳 💻  😠 💻  😡  💻 😭 💻  😊 💻  ✅
@@ -58,36 +65,38 @@ B: 🤪💻
  😳 💻  😠 💻  😡  💻 😭 💻  😊 💻  ✅
 
 ---
- # Su misión:
+
+# Su mision:
 
 ## 🤓 Switch + 🤪 Header = 
 
 <img src='https://media.giphy.com/media/xTiIzoVQB8P6PSioda/giphy.gif' alt='internet' width="40" height="40" style={{maxWidth: '500px'}}/>
 
 ---
-import Terminal from './Terminal.js'
+
+import Terminal from './components/Terminal.js'
 
 ## Primeros pasos:
 
-## Tenemos un proyecto en conjunto? 
+## Tenemos un proyecto en conjunto?
+
 ## Tenemos un repositorio creado? [Más información de como crear un repositorio](https://docs.github.com/es/github/getting-started-with-github/quickstart/create-a-repo)
 
 <img src='./assets/createARepo.gif' alt='create-repository' />
---- 
-## Inicializan el proyecto localmente y agregan su primer comentario.
 
-<Steps>
+---
+
+## Inicializan el proyecto localmente y agregan su primer comentario.
 
 - git init
 - git add .
 - git commit -m "first commit"
 - git branch -M main
-- git remote add origin <remote url>
+- git remote add origin 'remote url'
 - git push -u origin main
 
-</Steps>
-
 ---
+
 ## Proyecto local y remoto
 
 Ahora el proyecto vive en tu computadora y en el servidor.
@@ -103,49 +112,81 @@ Muchas computadoras !! Capaces de recibir peticiones y responder con la informac
 ## Inicio del desarrollo
 
 <Steps>
-
-- Crean una nueva rama llamada develop 
-- <Terminal text='git checkout -b develop' height='50px' color='white' />
-- Cambian cualquier cosa y suben ese cambio.
-- Ahora pueden bajar esos cambios.
-- <Terminal text='git checkout develop' height='50px' color='white' />
-- <Terminal text='git pull' height='50px' color='white' /> // solo si se siente paranoico
-- <Terminal text='Already up to date' height='50px' color='white' />
-- <Terminal text='git checkout -b feature/switch' height='50px' color='white' />
-
+  <li>
+    Crean una nueva rama llamada develop 
+  </li>
+  <li>
+    <Terminal text='git checkout -b develop' height='50px' color='white' />
+  </li>
+  <li>
+    Cambian cualquier cosa y suben ese cambio.
+  </li>
+  <li>
+    Ahora pueden bajar esos cambios.
+  </li>
+  <li>
+    <Terminal text='git checkout develop' height='50px' color='white' />
+  </li>
+  <li>
+    <Terminal text='git pull' height='50px' color='white' /> // solo si se siente paranoico
+  </li>
+  <li>
+    <Terminal text='Already up to date' height='50px' color='white' />
+  </li>
+  <li>
+    <Terminal text='git checkout -b feature/switch' height='50px' color='white' />
+  </li>
 </Steps>
 
 ---
 
 import Switch from './components/Switch.js'
-import Terminal from './components/Terminal.js'
 
 <Switch />
 
 <Steps>
-
-- <Terminal text='git status' height='50px' color='white' />
-- <Terminal text='Switch.js modified: Home.js' height='50px' color='red' />
-- <Terminal text='git add .' height='50px' color='white' />
-- <Terminal text='git status' height='50px' color='white' />
-- <Terminal text='Switch.js modified: Home.js' height='50px' color='yellowgreen' />
-- <Terminal text='git commit -m "Agregando estructura de Switch, faltan estilos"' height='50px' color='white' />
-
+  <li>
+    <Terminal text='git status' height='50px' color='white' />
+  </li>
+  <li>
+    <Terminal text='Switch.js modified: Home.js' height='50px' color='red' />
+  </li>
+  <li>
+    <Terminal text='git add .' height='50px' color='white' />
+  </li>
+  <li>
+    <Terminal text='git status' height='50px' color='white' />
+  </li>
+  <li>
+    <Terminal text='Switch.js modified: Home.js' height='50px' color='yellowgreen' />
+  </li>
+  <li>
+    <Terminal text='git commit -m "Agregando estructura de Switch, faltan estilos"' height='50px' color='white' />
+  </li>
 </Steps>
 
 ---
+
 import SwitchWithColors from './components/SwitchWithColors.js'
 
 <SwitchWithColors />
 
 <Steps>
-
-- <Terminal text='git status' height='30px' color='white' />
-- <Terminal text=' modified: Switch.js' height='30px' color='red' />
-- <Terminal text='git add .' height='30px' color='white' />
-- <Terminal text='git commit -m "Estilos listos"' height='150px' color='white'/>
-- <Terminal text='git push --set-upstream origin feature/switch' height='150px' color='white'/>
-
+  <li>
+    <Terminal text='git status' height='30px' color='white' />
+  </li>
+  <li>
+    <Terminal text=' modified: Switch.js' height='30px' color='red' />
+  </li>
+  <li>
+    <Terminal text='git add .' height='30px' color='white' />
+  </li>
+  <li>
+    <Terminal text='git commit -m "Estilos listos"' height='150px' color='white'/>
+  </li>
+  <li>
+    <Terminal text='git push --set-upstream origin feature/switch' height='150px' color='white'/>
+  </li>
 </Steps>
 
 ---
@@ -168,6 +209,7 @@ import SwitchWithColors from './components/SwitchWithColors.js'
 <img src='./assets/Screen Shot 2021-06-10 at 21.50.44.png' alt='git-diff' style={{maxWidth: '450px'}}/>
 
 ---
+
 # Y listo! ... por ahora 😅
 
 Ahora 🤪 podrá revisar tus cambios 
@@ -188,9 +230,10 @@ Y si los dos estan de acuerdo, unir sus cambios a su main branch.
 
 # QA
 
-<img src'https://media.giphy.com/media/xT5LMB2WiOdjpB7K4o/giphy.gif' alt='questions' style={{maxWidth: '650px'}}/>
- ---
+<img src='https://media.giphy.com/media/xT5LMB2WiOdjpB7K4o/giphy.gif' alt='questions' style={{maxWidth: '650px'}}/>
+ 
+---
 
 # Muchas gracias por su tiempo 
 
-<img src'https://media.giphy.com/media/WpIPgEs3Al7rrBleMz/giphy.gif' alt='questions' style={{maxWidth: '650px'}}/>
+<img src='https://media.giphy.com/media/WpIPgEs3Al7rrBleMz/giphy.gif' alt='questions' style={{maxWidth: '650px'}}/>
