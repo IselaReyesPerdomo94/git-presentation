@@ -54,7 +54,7 @@ B: 🤪💻
 ## Sin git: 
 
  🤓 😳 😠 😡 😭 😊 💻 💾
-           💾 💻 🤪 😳 😠 😡 😭 😊
+          --> 💾 💻 🤪 😳 😠 😡 😭 😊
 
 ---
 
@@ -77,16 +77,21 @@ B: 🤪💻
 import Terminal from './components/Terminal.js'
 
 ## Primeros pasos:
+import repo from './assets/createARepo.gif';
 
-## Tenemos un proyecto en conjunto?
+- Tenemos un proyecto en conjunto?
 
-## Tenemos un repositorio creado? [Más información de como crear un repositorio](https://docs.github.com/es/github/getting-started-with-github/quickstart/create-a-repo)
-
-<img src='./assets/createARepo.gif' alt='create-repository' />
+- Tenemos un repositorio creado? [Más información](https://docs.github.com/es/github/getting-started-with-github/quickstart/create-a-repo)
 
 ---
 
-## Inicializan el proyecto localmente y agregan su primer comentario.
+## Creando un repositorio
+
+<img src={repo} alt='create-repository' style={{maxWidth: '950px'}}/>
+
+---
+
+## Inicializan el proyecto localmente
 
 - git init
 - git add .
@@ -101,11 +106,16 @@ import Terminal from './components/Terminal.js'
 
 Ahora el proyecto vive en tu computadora y en el servidor.
 
-### Qué es el servidor?
+💻 ➡ 🌎
 
-Muchas computadoras !! Capaces de recibir peticiones y responder con la información que necesitas, dicha información viaja a traves de la red (internet). 
+---
 
-<img src='https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif' alt='internet' width="40" height="40" style={{maxWidth: '650px'}}/>
+#### Qué es el servidor?
+
+Muchas computadoras !! 
+Capaces de recibir peticiones y responder con la información que necesitas, dicha información viaja a traves de la red (internet). 
+
+<img src='https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif' alt='internet' width="40" height="40" style={{maxWidth: '350px'}}/>
 
 ---
 
@@ -116,7 +126,7 @@ Muchas computadoras !! Capaces de recibir peticiones y responder con la informac
     Crean una nueva rama llamada develop 
   </li>
   <li>
-    <Terminal text='git checkout -b develop' height='50px' color='white' />
+    <Terminal text='git checkout -b develop' color='white' />
   </li>
   <li>
     Cambian cualquier cosa y suben ese cambio.
@@ -197,7 +207,11 @@ import SwitchWithColors from './components/SwitchWithColors.js'
 
 ... ✅
 
-# Handy commands
+---
+
+## Handy commands
+
+import diff from './assets/diff.png';
 
 - git add . // Agregar todos los cambios.
 - git commit -m "" // Dar una descripción de esos cambios
@@ -206,7 +220,7 @@ import SwitchWithColors from './components/SwitchWithColors.js'
 - git diff // Diferencia entre lo que existia en tu comentario previo y tus cambios actuales.
 - git push // Subir cambios a rama remota.
 
-<img src='./assets/Screen Shot 2021-06-10 at 21.50.44.png' alt='git-diff' style={{maxWidth: '450px'}}/>
+<img src={diff} alt='git-diff' style={{width: '550px'}}/>
 
 ---
 
@@ -231,7 +245,7 @@ Y si los dos estan de acuerdo, unir sus cambios a su main branch.
 # QA
 
 <img src='https://media.giphy.com/media/xT5LMB2WiOdjpB7K4o/giphy.gif' alt='questions' style={{maxWidth: '650px'}}/>
- 
+
 ---
 
 # Muchas gracias por su tiempo 

@@ -1,14 +1,16 @@
 import React from 'react';
 
-function Terminal({text, height, color}){
+function Terminal({text, color}){
   return(
-  <textarea style={{
+  <p style={{
     backgroundColor: 'black',
     color: color,
     width: '900px',
-    height: height,
     fontSize: '1.5rem',
-  }} value={text} />)
+    padding: '0.5rem',
+    border: '1px solid white',
+    margin: 0,
+  }}>{text}</p>)
 };
 
 export default Terminal;
