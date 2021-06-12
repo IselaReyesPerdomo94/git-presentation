@@ -1,5 +1,5 @@
 import { themes } from 'mdx-deck'
-export const theme = themes.big
+export const theme = themes.future
 
 <Header>
 
@@ -83,6 +83,7 @@ import repo from './assets/createARepo.gif';
 
 - Tenemos un repositorio creado? [Más información](https://docs.github.com/es/github/getting-started-with-github/quickstart/create-a-repo)
 
+- [Tutorial de instalación min 5:50](https://www.youtube.com/watch?v=SWYqp7iY_Tc) 😁 
 ---
 
 ## Creando un repositorio
@@ -168,7 +169,7 @@ import Switch from './components/Switch.js'
     <Terminal text='git status' height='50px' color='white' />
   </li>
   <li>
-    <Terminal text='Switch.js modified: Home.js' height='50px' color='yellowgreen' />
+    <Terminal text='new file: Switch.js modified: Home.js' height='50px' color='yellowgreen' />
   </li>
   <li>
     <Terminal text='git commit -m "Agregando estructura de Switch, faltan estilos"' height='50px' color='white' />
@@ -219,6 +220,8 @@ import diff from './assets/diff.png';
 - git log // Historial de commits 
 - git diff // Diferencia entre lo que existia en tu comentario previo y tus cambios actuales.
 - git push // Subir cambios a rama remota.
+- git help command
+- git branch --show-current // Para saber tu rama actual
 
 <img src={diff} alt='git-diff' style={{width: '550px'}}/>
 
